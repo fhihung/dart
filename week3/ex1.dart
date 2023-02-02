@@ -55,6 +55,11 @@ class SinhVien {
 class SinhVienDaiCuong extends SinhVien {
   var diemDaiCuong;
   @override
+  void hienThiThongTin() {
+    super.hienThiThongTin();
+    print("Diem dai cuong $diemDaiCuong");
+  }
+
   void hienThiThongTinCoBan() {
     print("Ma sinh vien: $maSinhVien ");
     print("Ho va Ten: $hoTen");
@@ -74,17 +79,18 @@ class SinhVienDaiCuong extends SinhVien {
 
 void main(List<String> args) {
   var s = new SinhVien();
-  var sv = new SinhVien.khoiTaoGiaTri(210100598, "Nguyen Phi Hung", false);
+  // var sv = new SinhVien.khoiTaoGiaTri();
   var svv = new SinhVienDaiCuong();
+  s
+    ..ident = "21010598"
+    ..name = "Nguyen Phi Hung"
+    ..sex = true;
   svv
     ..name = "Hungdz"
     ..sex = true
     ..diemDaiCuong = 3.3; //khong co ; nhe
-  // sv.maSinhVien = 21010598;
-  // sv.hoTen = "Nguyen Phi Hung";
-  // sv.gioiTinh = true;
+
   s.hienThiThongTin();
   print("------------------");
-
   svv.hienThiThongTinCoBan();
 }
