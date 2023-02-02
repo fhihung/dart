@@ -59,6 +59,16 @@ class SinhVienDaiCuong extends SinhVien {
     print("Ma sinh vien: $maSinhVien ");
     print("Ho va Ten: $hoTen");
     print("Ma sinh vien: ${gioiTinh ? "Nam" : "Nu"} ");
+    print("Diem dai cuong $diemDaiCuong");
+  }
+
+  SinhVienDaiCuong() {}
+  SinhVienDaiCuong.khoiTaoGiaTri(
+      int maSinhVien, String hoTen, bool gioiTinh, double diemDaiCuong) {
+    this.maSinhVien = maSinhVien;
+    this.hoTen = hoTen;
+    this.gioiTinh = gioiTinh;
+    this.diemDaiCuong = diemDaiCuong;
   }
 }
 
@@ -68,6 +78,7 @@ void main(List<String> args) {
   var svv = new SinhVienDaiCuong();
   svv.name = "Hungdz";
   svv.sex = true;
+  svv.diemDaiCuong = 3.3;
   // sv.maSinhVien = 21010598;
   // sv.hoTen = "Nguyen Phi Hung";
   // sv.gioiTinh = true;
