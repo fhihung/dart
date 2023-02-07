@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 class SinhVien {
   var maSinhVien;
   var hoTen;
