@@ -38,5 +38,5 @@ class HinhChuNhat extends Hinh {
 
 void main(List<String> args) {
   Hinh ht1 = HinhTron(5.5);
-  Hinh ht2 = HinhChuNhat(3.3, 4.4);
+  Hinh ht2 = HinhChuNhat(3.3, 5);
 }
